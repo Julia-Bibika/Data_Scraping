@@ -1,0 +1,29 @@
+Назва факультету: Географічний факультет
+URL: http://www.univ.kiev.ua/ua/departments/geography/
+Назва факультету: Економічний факультет
+URL: http://www.univ.kiev.ua/ua/departments/economics/
+Назва факультету: Історичний факультет
+URL: http://www.univ.kiev.ua/ua/departments/history/
+Назва факультету: Механіко-математичний факультет
+URL: http://www.univ.kiev.ua/ua/departments/mm/
+Назва факультету: Факультет інформаційних технологій
+URL: http://www.univ.kiev.ua/ua/departments/it/
+Назва факультету: Факультет комп'ютерних наук та кібернетики
+URL: http://www.univ.kiev.ua/ua/departments/csc/
+Назва факультету: Факультет психології
+URL: http://www.univ.kiev.ua/ua/departments/psychology/
+Назва факультету: Факультет радіофізики, електроніки та комп’ютерних систем
+URL: http://www.univ.kiev.ua/ua/departments/recs/
+Назва факультету: Факультет соціології
+URL: http://www.univ.kiev.ua/ua/departments/sociology/
+Назва факультету: Фізичний факультет
+URL: http://www.univ.kiev.ua/ua/departments/physics/
+Назва факультету: Філософський факультет
+URL: http://www.univ.kiev.ua/ua/departments/philosophy/
+Назва факультету: Хімічний факультет
+URL: http://www.univ.kiev.ua/ua/departments/chemistry/
+Назва кафедри: Кафедра аналітичної хімії
+Назва кафедри: Кафедра неорганічної хімії
+Назва кафедри: Кафедра органічної хімії
+Назва кафедри: Кафедра фізичної хімії
+Назва кафедри: Кафедра хімії високомолекулярних сполук

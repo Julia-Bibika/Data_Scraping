@@ -7,7 +7,7 @@ class ShevchenkoCssSpider(scrapy.Spider):
     start_urls = ["http://www.univ.kiev.ua/ua/departments"]
 
     def parse(self, response):
-        fac_list = response.css('ul.b-references__holder').css('li.b-references__item')
+        fac_list = response.css('div.b-references:nth-child(2)').css('.b-references__item')
         for faculty in fac_list:
             fac_name = faculty.css('a.b-references__link::text').get()
             fac_url = faculty.css('a.b-references__link::attr(href)').get()
@@ -16,9 +16,9 @@ class ShevchenkoCssSpider(scrapy.Spider):
                 url="http://www.univ.kiev.ua" + fac_url
                 )
             yield scrapy.Request(               
-                    url=fac_url,
-                    callback=self.parse_faculty,
-                    meta={
+                url="http://www.univ.kiev.ua"+fac_url,
+                callback=self.parse_faculty,
+                meta={
                         "faculty": fac_name
                     }
             )

@@ -13,3 +13,6 @@ class DepartmentItem(scrapy.Item):
     name = scrapy.Field()
     faculty = scrapy.Field()
     url = scrapy.Field()
+class StaffItem(scrapy.Item):
+    name = scrapy.Field()
+    department = scrapy.Field()

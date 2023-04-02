@@ -1,6 +1,6 @@
 import scrapy
 from bs4 import BeautifulSoup
-from lab2.items import FacultyItem, DepartmentItem
+from lab2.items import FacultyItem, DepartmentItem,StaffItem
 
 class ShevchenkoSpider(scrapy.Spider):
     name = "shevchenko"
@@ -13,14 +13,14 @@ class ShevchenkoSpider(scrapy.Spider):
         for li in fac_list.find_all("li"):
             a = li.find("a")
             fac_name = a.find(string=True, recursive=False)
-            fac_url = f"http://www.univ.kiev.ua{a.get('href')}"
+            fac_url = a.get('href')
             yield FacultyItem(
                 name=fac_name,
-                url=fac_url
+                url="http://www.univ.kiev.ua" + fac_url
             )
             yield scrapy.Request(
                
-                url=fac_url,
+                url="http://www.univ.kiev.ua" + fac_url,
                 callback=self.parse_faculty,
                 meta={
                     "faculty": fac_name
@@ -34,8 +34,7 @@ class ShevchenkoSpider(scrapy.Spider):
                     for li in li_list.find_all("li"):
                         dep_name = li.find(string=True, recursive=False)
                         if dep_name == None:
-                              dep_name = li.a.find(string=True, recursive=False)
-
+                            dep_name = li.a.find(string=True, recursive=False)
                         dep_url = li.a.get('href')
                               
                         yield DepartmentItem(
@@ -44,7 +43,7 @@ class ShevchenkoSpider(scrapy.Spider):
                             faculty=response.meta.get("faculty")
                         )
 #                         yield scrapy.Request(
-#                         url=dep_url+"uk/about/employees",
+#                         url=dep_url+"vikladachi/",
 #                         callback=self.parse_department,
 #                         meta={
 #                             "department": dep_name
@@ -52,10 +51,10 @@ class ShevchenkoSpider(scrapy.Spider):
 #                     )
 # def parse_department(self, response):
 #         soup = BeautifulSoup(response.body,  "html.parser")
-#         staff_list = soup.find(name = "div", class_="info")
+#         staff_list = soup.find(class_ = "entry-content wow fadeInUp")
 #         if staff_list:
-#             for div in staff_list.find_all(name = "div", class_="staff_item"):
-#                 name = div.a.find(string=True, recursive=False)
+#             for h3 in staff_list.find_all("h3"):
+#                 name = h3.find(string=True, recursive=False)
 #                 yield StaffItem(
 #                     name=name,
 #                     department=response.meta.get("department")

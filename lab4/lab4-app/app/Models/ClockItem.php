@@ -14,6 +14,5 @@ class ClockItem extends Model
         'price',
         'url',
         'image_urls',
-        'img'
     ];
 }

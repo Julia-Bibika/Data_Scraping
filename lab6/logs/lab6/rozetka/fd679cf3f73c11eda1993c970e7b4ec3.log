@@ -1,0 +1,165 @@
+2023-05-20 21:34:50 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: lab6)
+2023-05-20 21:34:50 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.19044-SP0
+2023-05-20 21:34:50 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'lab6',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\lab6\\rozetka\\fd679cf3f73c11eda1993c970e7b4ec3.log',
+ 'NEWSPIDER_MODULE': 'lab6.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['lab6.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}
+2023-05-20 21:34:50 [asyncio] DEBUG: Using selector: SelectSelector
+2023-05-20 21:34:50 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-05-20 21:34:50 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-05-20 21:34:50 [scrapy.extensions.telnet] INFO: Telnet Password: 6a4d907a1c10fb8d
+2023-05-20 21:34:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapeops_scrapy.extension.ScrapeOpsMonitor']
+2023-05-20 21:34:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-05-20 21:34:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-05-20 21:34:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-05-20 21:34:51 [scrapy.core.engine] INFO: Spider opened
+2023-05-20 21:34:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-05-20 21:34:51 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-20 21:34:51 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/setup/ HTTP/1.1" 401 21
+2023-05-20 21:34:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-05-20 21:34:51 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-20 21:34:51 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/normalizer/domain/?domain=rozetka.com.ua HTTP/1.1" 401 21
+2023-05-20 21:34:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rozetka.com.ua/ua/all-tv/c80037/> from <GET https://rozetka.com.ua/all-tv/c80037/>
+2023-05-20 21:34:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rozetka.com.ua/ua/all-tv/c80037/> (referer: None)
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content.rozetka.com.ua/goods/images/big_tile/303985086.jpg',
+ 'name': '',
+ 'price': '12\xa0999',
+ 'url': 'https://rozetka.com.ua/ua/samsung_ue43t5300auxua/p206672437/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content2.rozetka.com.ua/goods/images/big_tile/311141222.jpg',
+ 'name': '',
+ 'price': '6\xa0499',
+ 'url': 'https://rozetka.com.ua/ua/ergo-32ghs5500/p362684418/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content2.rozetka.com.ua/goods/images/big_tile/323928102.jpg',
+ 'name': '',
+ 'price': '35\xa0999',
+ 'url': 'https://rozetka.com.ua/ua/samsung-qe55q60cauxua/p373026732/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content1.rozetka.com.ua/goods/images/big_tile/314481842.jpg',
+ 'name': '',
+ 'price': '19\xa0799',
+ 'url': 'https://rozetka.com.ua/ua/lg_43uq81006lb_adrb/p351475905/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content2.rozetka.com.ua/goods/images/big_tile/320445229.jpg',
+ 'name': '',
+ 'price': '27\xa0999',
+ 'url': 'https://rozetka.com.ua/ua/samsung_qe50q60bauxua/p349487952/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content.rozetka.com.ua/goods/images/big_tile/306956273.jpg',
+ 'name': '',
+ 'price': '6\xa0999',
+ 'url': 'https://rozetka.com.ua/ua/kivi-32h740nb/p363944241/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content1.rozetka.com.ua/goods/images/big_tile/311846565.jpg',
+ 'name': '',
+ 'price': '23\xa0989',
+ 'url': 'https://rozetka.com.ua/ua/sharp-4t-c50eq3em2ag/p366422955/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content.rozetka.com.ua/goods/images/big_tile/306957447.jpg',
+ 'name': '',
+ 'price': '16\xa0999',
+ 'url': 'https://rozetka.com.ua/ua/kivi-55u740nb/p363944121/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content1.rozetka.com.ua/goods/images/big_tile/324833757.jpg',
+ 'name': '',
+ 'price': '20\xa0999',
+ 'url': 'https://rozetka.com.ua/ua/nokia-174013/p373452168/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rozetka.com.ua/ua/all-tv/c80037/>
+{'image_urls': 'https://content1.rozetka.com.ua/goods/images/big_tile/314481777.jpg',
+ 'name': '',
+ 'price': '11\xa0999',
+ 'url': 'https://rozetka.com.ua/ua/lg_32lq63006la_adrb/p351475890/'}
+2023-05-20 21:34:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rozetka.com.ua/ua/all-tv/c80037/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Python311\Lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Python311\Lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Python311\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Python311\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Python311\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "E:\Data_scraping\Julia\lab6\lab6\spiders\rozetka.py", line 21, in parse
+    image_url = item.find(name="img" ,class_ ="ng-lazyloaded").get("src")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-05-20 21:34:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-05-20 21:34:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-20 21:34:54 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/setup/ HTTP/1.1" 401 21
+2023-05-20 21:34:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 816,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 134144,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'elapsed_time_seconds': 2.604104,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 5, 20, 18, 34, 54, 101030),
+ 'httpcompression/response_bytes': 1623828,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 10,
+ 'log_count/DEBUG': 21,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2023, 5, 20, 18, 34, 51, 496926)}
+2023-05-20 21:34:54 [scrapy.core.engine] INFO: Spider closed (finished)

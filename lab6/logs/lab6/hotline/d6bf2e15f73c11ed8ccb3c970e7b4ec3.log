@@ -1,0 +1,194 @@
+2023-05-20 21:33:41 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: lab6)
+2023-05-20 21:33:41 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.19044-SP0
+2023-05-20 21:33:41 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'lab6',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\lab6\\hotline\\d6bf2e15f73c11ed8ccb3c970e7b4ec3.log',
+ 'NEWSPIDER_MODULE': 'lab6.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['lab6.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}
+2023-05-20 21:33:41 [asyncio] DEBUG: Using selector: SelectSelector
+2023-05-20 21:33:41 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-05-20 21:33:41 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-05-20 21:33:42 [scrapy.extensions.telnet] INFO: Telnet Password: dd1d5de8fdbda562
+2023-05-20 21:33:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapeops_scrapy.extension.ScrapeOpsMonitor']
+2023-05-20 21:33:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-05-20 21:33:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-05-20 21:33:42 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-05-20 21:33:42 [scrapy.core.engine] INFO: Spider opened
+2023-05-20 21:33:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-05-20 21:33:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-20 21:33:43 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/setup/ HTTP/1.1" 401 21
+2023-05-20 21:33:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-05-20 21:33:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-20 21:33:43 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/normalizer/domain/?domain=hotline.ua HTTP/1.1" 401 21
+2023-05-20 21:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/> (referer: None)
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386706685_s265.jpg'],
+ 'name': 'Yamaha C40',
+ 'price': '4\xa0921',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-c-40/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386706692_s265.jpg'],
+ 'name': 'Yamaha F310 NT',
+ 'price': '5\xa0754',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-f310/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/387/387137511_s265.jpg'],
+ 'name': 'Fender CD-60 DREAD V3 Black',
+ 'price': '7\xa0431',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/fender-cd-60-dread-v3-black/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386706686_s265.jpg'],
+ 'name': 'Yamaha F370 NT',
+ 'price': '10\xa0043',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-f370-nt/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386706699_s265.jpg'],
+ 'name': 'Fender CD-60 DREAD V3 Sunburst',
+ 'price': '8\xa0135',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/fender-cd-60-dread-v3-sunburst/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/374/374575363_s265.jpg'],
+ 'name': 'Sigma DM-ST',
+ 'price': '13\xa0739',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/sigma-dm-st/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386706721_s265.jpg'],
+ 'name': 'Yamaha FG730S',
+ 'price': '9\xa0014',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-fg730s/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/388/388088444_s265.jpg'],
+ 'name': 'Cort AD810 BKS',
+ 'price': '4\xa0800',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/cort-ad810-bks/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/369/369071458_s265.jpg'],
+ 'name': 'Taylor 214ce DLX',
+ 'price': '75\xa0050',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/taylor-214ce-dlx/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/382/382525273_s265.jpg'],
+ 'name': 'Takamine GD51-NAT',
+ 'price': '18\xa0030',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/takamine-gd51-nat/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/381/381982986_s265.jpg'],
+ 'name': 'Yamaha FG830 Natural',
+ 'price': '18\xa0721',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-fg830-nt/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386706715_s265.jpg'],
+ 'name': 'Admira Juanita',
+ 'price': '9\xa0118',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/admira-juanita/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/386/386706753_s265.jpg'],
+ 'name': 'Takamine GD11M',
+ 'price': '8\xa0283',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/takamine-gd11m/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/369/369029782_s265.jpg'],
+ 'name': 'Yamaha FGX820C',
+ 'price': '22\xa0639',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-fgx820c/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/366/366403400_s265.jpg'],
+ 'name': 'Fender CD-60S NAT',
+ 'price': '11\xa0994',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/fender-cd-60s-nat/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/343/343278319_s265.jpg'],
+ 'name': 'Valencia VC262BK',
+ 'price': '2\xa0370',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/valencia-vc262bk/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/381/381982990_s265.jpg'],
+ 'name': 'Yamaha FG800 NT',
+ 'price': '13\xa0325',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-fg800/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/310/310527922_s265.jpg'],
+ 'name': 'Yamaha FSX820C',
+ 'price': '22\xa0509',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-fsx820c/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/383/383572526_s265.jpg'],
+ 'name': 'Harley Benton D-120CE BK',
+ 'price': '5\xa0649',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/harley-benton-d-120ce-bk/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/522/52214889_s265.jpg'],
+ 'name': 'Takamine GD11MCE',
+ 'price': '12\xa0350',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/takamine-gd11mce/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/310/310551132_s265.jpg'],
+ 'name': 'Yamaha FG-TA VINTAGE TNT',
+ 'price': '31\xa0020',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-fg-ta/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/369/369029651_s265.jpg'],
+ 'name': 'FZONE FZU-002',
+ 'price': '899',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/fzone-fzu-002/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/384/384254978_s265.jpg'],
+ 'name': 'Yamaha FS100C NT',
+ 'price': '7\xa0584',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/yamaha-fs100c/'}
+2023-05-20 21:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hotline.ua/ua/musical_instruments/gitary-akusticheskie/>
+{'image_urls': ['https://hotline.ua/img/tx/365/365266228_s265.jpg'],
+ 'name': 'TYMA D-3C CG',
+ 'price': '11\xa0550',
+ 'url': '/ua/musical_instruments-gitary-akusticheskie/tyma-d-3c-cg/'}
+2023-05-20 21:33:45 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-05-20 21:33:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.scrapeops.io:443
+2023-05-20 21:33:45 [urllib3.connectionpool] DEBUG: https://api.scrapeops.io:443 "POST /api/v1/setup/ HTTP/1.1" 401 21
+2023-05-20 21:33:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 55247,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.580238,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 5, 20, 18, 33, 45, 778729),
+ 'httpcompression/response_bytes': 515280,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 24,
+ 'log_count/DEBUG': 34,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2023, 5, 20, 18, 33, 43, 198491)}
+2023-05-20 21:33:45 [scrapy.core.engine] INFO: Spider closed (finished)

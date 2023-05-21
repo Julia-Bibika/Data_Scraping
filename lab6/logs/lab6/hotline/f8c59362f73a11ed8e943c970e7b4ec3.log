@@ -1,0 +1,14 @@
+2023-05-20 21:20:19 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: lab6)
+2023-05-20 21:20:19 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.19044-SP0
+2023-05-20 21:20:19 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'lab6',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\lab6\\hotline\\f8c59362f73a11ed8e943c970e7b4ec3.log',
+ 'NEWSPIDER_MODULE': 'lab6.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['lab6.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-05-20 21:20:19 [asyncio] DEBUG: Using selector: SelectSelector
+2023-05-20 21:20:19 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-05-20 21:20:19 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-05-20 21:20:19 [scrapy.extensions.telnet] INFO: Telnet Password: 1b4b60ca7c7bf10d
